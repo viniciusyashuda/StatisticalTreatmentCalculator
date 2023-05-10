@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Globalization;
 
 namespace StatisticalTreatmentCalculator
 {
@@ -7,8 +6,6 @@ namespace StatisticalTreatmentCalculator
     {
         static void Main(string[] args)
         {
-            CultureInfo.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US");
-
             Console.WriteLine("What was the precision or variation with which the measurements were obtained?");
             var stringVariation = Console.ReadLine();
             var variation = decimal.Parse(stringVariation.Replace(",", "."));
